@@ -132,16 +132,27 @@ Certs reinforce what my repos prove:
 🔧 Technical Focus Areas
 
 **Infrastructure:**
+
 AWS, Azure, VMware, Proxmox, Bare Metal, Virtualization
+
 **Kubernetes Platforms:**
+
 EKS, Kubeadm, ingress/KIC, CNI models, cluster bootstrap, governance
+
 **App Delivery & Networking:**
+
 NGINX, F5 (BIG-IP, XC), Load Balancing, L4/L7 policy, service mesh integration
+
 **Security:**
+
 Zero Trust patterns, mTLS, hardened baselines, network policy, RBAC
+
 **Observability:**
+
 OpenTelemetry, Datadog, metrics/logs/traces, collectors, pipelines
+
 **Automation:**
+
 Terraform, Packer, GitHub Actions, GitLab CI, cloud-init, Helm
 
 ---------------------------------------------------------------------------------------------------------------------------------------
