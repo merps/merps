@@ -4,14 +4,14 @@
 My work spans AWS, Kubernetes, VMware, Proxmox, networking, security, observability, and application delivery.
 
 I build systems that **developers love, security trusts,** and **ops can run** — with IaC, CI/CD, strong governance, and clear platform boundaries.
+_______________________________________________________________________________________________________________________________________
 
----------------------------------------------------------------------------------------------------------------------------------------
 
 🚀 **What I Build (Flagship Repos)**
 
 These three repositories define my engineering identity.
 They represent how I think, design, and ship platform infrastructure.
----------------------------------------------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________________________________________________
 **1. platform-eks-nginx-kic**
 
 **Production-ready EKS + NGINX Ingress + IRSA architecture.**
