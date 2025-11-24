@@ -4,12 +4,13 @@
 My work spans AWS, Kubernetes, VMware, Proxmox, networking, security, observability, and application delivery.
 
 I build systems that **developers love, security trusts,** and **ops can run** — with IaC, CI/CD, strong governance, and clear platform boundaries.
-
-🚀 What I Build (Flagship Repos)
+---------------------------------------------------------------------------------------------------------------------------------------
+🚀 **What I Build (Flagship Repos)**
 
 These three repositories define my engineering identity.
 They represent how I think, design, and ship platform infrastructure.
 
+---------------------------------------------------------------------------------------------------------------------------------------
 **1. platform-eks-nginx-kic**
 
 **Production-ready EKS + NGINX Ingress + IRSA architecture.**
@@ -24,6 +25,7 @@ They represent how I think, design, and ship platform infrastructure.
 
 🔗 Repo: [platform-eks-nginx-kic](https://github.com/merps/platform-eks-nginx-kic)
 
+---------------------------------------------------------------------------------------------------------------------------------------
 **2. vsphere-nginx-secure-appstack**
 
 **Hybrid infrastructure: vSphere + cloud-init + NGINX secure application gateway.**
@@ -38,6 +40,7 @@ They represent how I think, design, and ship platform infrastructure.
 
 🔗 Repo: [vsphere-nginx-secure-appstack](https://github.com/merps/vsphere-nginx-secure-appstack)
 
+---------------------------------------------------------------------------------------------------------------------------------------
 **3. eks-policy-observability-stack**
 
 **Governance + observability for real Kubernetes platforms.**
@@ -52,6 +55,7 @@ They represent how I think, design, and ship platform infrastructure.
 
 🔗 Repo: [eks-policy-observability-stack](https://github.com/merps/eks-policy-observability-stack)
 
+---------------------------------------------------------------------------------------------------------------------------------------
 🧠 My Engineering Identity (Identity OS)
 
 I operate with a clear personal engineering system:
@@ -80,6 +84,7 @@ My identity OS prioritizes clarity, repeatability, and narrative over hacks and 
 Platforms survive by being consistent.
 I create simple, stable patterns — even when solving complex multi-domain problems.
 
+---------------------------------------------------------------------------------------------------------------------------------------
 🏆 Certifications (Credly)
 
 These aren’t badges; they’re signals of lifelong learning and broad capability across cloud, networks, infra, and security.
@@ -95,6 +100,7 @@ These aren’t badges; they’re signals of lifelong learning and broad capabili
 Certs reinforce what my repos prove:
 **I think across layers — from metal → hypervisor → cloud → cluster → app → edge.**
 
+---------------------------------------------------------------------------------------------------------------------------------------
 🏗️ What I’m Currently Building
 
 - Modernizing and polishing the extracted platform repos for public presentation
@@ -110,6 +116,7 @@ Certs reinforce what my repos prove:
   - governance fundamentals
   - real-world infrastructure thinking
 
+---------------------------------------------------------------------------------------------------------------------------------------
 🔧 Technical Focus Areas
 
 **Infrastructure:**
@@ -130,6 +137,7 @@ OpenTelemetry, Datadog, metrics/logs/traces, collectors, pipelines
 **Automation:**
 Terraform, Packer, GitHub Actions, GitLab CI, cloud-init, Helm
 
+---------------------------------------------------------------------------------------------------------------------------------------
 ⚙️ How I Work
 
 - IaC first: everything is declarative
@@ -138,6 +146,7 @@ Terraform, Packer, GitHub Actions, GitLab CI, cloud-init, Helm
 - Architecture visible: diagrams > assumptions
 - Extremely practical: I build things I would want to support
 
+---------------------------------------------------------------------------------------------------------------------------------------
 🤝 Let’s Connect
 
 If you want to talk platform engineering, hybrid cloud, Kubernetes, or infrastructure automation, feel free to reach out.
