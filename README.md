@@ -16,9 +16,13 @@ They represent how I think, design, and ship platform infrastructure.
 **Production-ready EKS + NGINX Ingress + IRSA architecture.**
 
 ✔ Terraform (modular)
+
 ✔ NGINX Ingress Controller
+
 ✔ Secure workload boundaries
+
 ✔ Demo workloads + L7 routing
+
 ✔ CI for IaC & manifest validation
 
 **→ A complete “cloud-native edge” stack.**
