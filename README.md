@@ -68,7 +68,7 @@ They represent how I think, design, and ship platform infrastructure.
 🔗 Repo: [eks-policy-observability-stack](https://github.com/merps/eks-policy-observability-stack)
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-🧠 My Engineering Identity (Identity OS)
+🧠 My Engineering Persona 
 
 I operate with a clear personal engineering system:
 
