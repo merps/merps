@@ -4,7 +4,6 @@
 My work spans AWS, Kubernetes, VMware, Proxmox, networking, security, observability, and application delivery.
 
 I build systems that **developers love, security trusts,** and **ops can run** — with IaC, CI/CD, strong governance, and clear platform boundaries.
-
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 🚀 **What I Build (Flagship Repos)**
@@ -65,9 +64,7 @@ They represent how I think, design, and ship platform infrastructure.
 **→ Because real platforms need control, not just clusters.**
 
 🔗 Repo: [eks-policy-observability-stack](https://github.com/merps/eks-policy-observability-stack)
-
 ---------------------------------------------------------------------------------------------------------------------------------------
-
 🧠 My Engineering Persona 
 
 I operate with a clear personal engineering system:
@@ -95,9 +92,7 @@ My identity OS prioritizes clarity, repeatability, and narrative over hacks and 
 
 Platforms survive by being consistent.
 I create simple, stable patterns — even when solving complex multi-domain problems.
-
 ---------------------------------------------------------------------------------------------------------------------------------------
-
 🏆 Certifications (Credly)
 
 These aren’t badges; they’re signals of lifelong learning and broad capability across cloud, networks, infra, and security.
@@ -112,9 +107,7 @@ These aren’t badges; they’re signals of lifelong learning and broad capabili
 
 Certs reinforce what my repos prove:
 **I think across layers — from metal → hypervisor → cloud → cluster → app → edge.**
-
 ---------------------------------------------------------------------------------------------------------------------------------------
-
 🏗️ What I’m Currently Building
 
 - Modernizing and polishing the extracted platform repos for public presentation
@@ -129,9 +122,7 @@ Certs reinforce what my repos prove:
   - IaC patterns
   - governance fundamentals
   - real-world infrastructure thinking
-
 ---------------------------------------------------------------------------------------------------------------------------------------
-
 🔧 Technical Focus Areas
 
 **Infrastructure:**
@@ -157,9 +148,7 @@ OpenTelemetry, Datadog, metrics/logs/traces, collectors, pipelines
 **Automation:**
 
 Terraform, Packer, GitHub Actions, GitLab CI, cloud-init, Helm
-
 ---------------------------------------------------------------------------------------------------------------------------------------
-
 ⚙️ How I Work
 
 - IaC first: everything is declarative
@@ -167,7 +156,6 @@ Terraform, Packer, GitHub Actions, GitLab CI, cloud-init, Helm
 - Strong opinions, loosely held: I choose patterns deliberately
 - Architecture visible: diagrams > assumptions
 - Extremely practical: I build things I would want to support
-
 ---------------------------------------------------------------------------------------------------------------------------------------
 🤝 Let’s Connect
 
