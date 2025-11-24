@@ -6,12 +6,10 @@ My work spans AWS, Kubernetes, VMware, Proxmox, networking, security, observabil
 I build systems that **developers love, security trusts,** and **ops can run** — with IaC, CI/CD, strong governance, and clear platform boundaries.
 _______________________________________________________________________________________________________________________________________
 
-
 🚀 **What I Build (Flagship Repos)**
-
 These three repositories define my engineering persona. They represent how I think, design, and ship platform infrastructure.
+_______________________________________________________________________________________________________________________________________
 
----------------------------------------------------------------------------------------------------------------------------------------
 **1. platform-eks-nginx-kic**
 
 **Production-ready EKS + NGINX Ingress + IRSA architecture.**
@@ -29,7 +27,8 @@ These three repositories define my engineering persona. They represent how I thi
 **→ A complete “cloud-native edge” stack.**
 
 🔗 Repo: [platform-eks-nginx-kic](https://github.com/merps/platform-eks-nginx-kic)
----------------------------------------------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________________________________________________
+
 **2. vsphere-nginx-secure-appstack**
 
 **Hybrid infrastructure: vSphere + cloud-init + NGINX secure application gateway.**
@@ -47,7 +46,8 @@ These three repositories define my engineering persona. They represent how I thi
 **→ Shows how I build secure, governed on-prem platforms.**
 
 🔗 Repo: [vsphere-nginx-secure-appstack](https://github.com/merps/vsphere-nginx-secure-appstack)
----------------------------------------------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________________________________________________
+
 **3. eks-policy-observability-stack**
 
 **Governance + observability for real Kubernetes platforms.**
@@ -65,7 +65,8 @@ These three repositories define my engineering persona. They represent how I thi
 **→ Because real platforms need control, not just clusters.**
 
 🔗 Repo: [eks-policy-observability-stack](https://github.com/merps/eks-policy-observability-stack)
----------------------------------------------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________________________________________________
+
 🧠 My Engineering Persona 
 
 I operate with a clear personal engineering system:
@@ -93,7 +94,8 @@ My identity OS prioritizes clarity, repeatability, and narrative over hacks and 
 
 Platforms survive by being consistent.
 I create simple, stable patterns — even when solving complex multi-domain problems.
----------------------------------------------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________________________________________________
+
 🏆 Certifications (Credly)
 
 These aren’t badges; they’re signals of lifelong learning and broad capability across cloud, networks, infra, and security.
@@ -108,7 +110,8 @@ These aren’t badges; they’re signals of lifelong learning and broad capabili
 
 Certs reinforce what my repos prove:
 **I think across layers — from metal → hypervisor → cloud → cluster → app → edge.**
----------------------------------------------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________________________________________________
+
 🏗️ What I’m Currently Building
 
 - Modernizing and polishing the extracted platform repos for public presentation
@@ -123,7 +126,8 @@ Certs reinforce what my repos prove:
   - IaC patterns
   - governance fundamentals
   - real-world infrastructure thinking
----------------------------------------------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________________________________________________
+
 🔧 Technical Focus Areas
 
 **Infrastructure:**
@@ -149,7 +153,8 @@ OpenTelemetry, Datadog, metrics/logs/traces, collectors, pipelines
 **Automation:**
 
 Terraform, Packer, GitHub Actions, GitLab CI, cloud-init, Helm
----------------------------------------------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________________________________________________
+
 ⚙️ How I Work
 
 - IaC first: everything is declarative
@@ -157,7 +162,8 @@ Terraform, Packer, GitHub Actions, GitLab CI, cloud-init, Helm
 - Strong opinions, loosely held: I choose patterns deliberately
 - Architecture visible: diagrams > assumptions
 - Extremely practical: I build things I would want to support
----------------------------------------------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________________________________________________
+
 🤝 Let’s Connect
 
 If you want to talk platform engineering, hybrid cloud, Kubernetes, or infrastructure automation, feel free to reach out.
