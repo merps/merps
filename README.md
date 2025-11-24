@@ -35,9 +35,13 @@ They represent how I think, design, and ship platform infrastructure.
 **Hybrid infrastructure: vSphere + cloud-init + NGINX secure application gateway.**
 
 ✔ VMware VM automation
+
 ✔ Secure NGINX reverse proxy layer
+
 ✔ TLS termination
+
 ✔ Application nodes via cloud-init
+
 ✔ Enterprise-style architecture & flows
 
 **→ Shows how I build secure, governed on-prem platforms.**
@@ -50,9 +54,13 @@ They represent how I think, design, and ship platform infrastructure.
 **Governance + observability for real Kubernetes platforms.**
 
 ✔ Admission control
+
 ✔ Network policies
+
 ✔ Datadog / OpenTelemetry
+
 ✔ Alerts & telemetry pipelines
+
 ✔ Terraform + K8s policies
 
 **→ Because real platforms need control, not just clusters.**
