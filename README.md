@@ -9,9 +9,9 @@ ________________________________________________________________________________
 
 🚀 **What I Build (Flagship Repos)**
 
-These three repositories define my engineering identity.
-They represent how I think, design, and ship platform infrastructure.
-_______________________________________________________________________________________________________________________________________
+These three repositories define my engineering persona. They represent how I think, design, and ship platform infrastructure.
+
+---------------------------------------------------------------------------------------------------------------------------------------
 **1. platform-eks-nginx-kic**
 
 **Production-ready EKS + NGINX Ingress + IRSA architecture.**
