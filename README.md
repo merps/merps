@@ -11,7 +11,6 @@ I build systems that **developers love, security trusts,** and **ops can run** â
 
 These three repositories define my engineering identity.
 They represent how I think, design, and ship platform infrastructure.
-
 ---------------------------------------------------------------------------------------------------------------------------------------
 **1. platform-eks-nginx-kic**
 
