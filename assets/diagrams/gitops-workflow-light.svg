@@ -1,0 +1,49 @@
+<svg width="900" height="440" viewBox="0 0 900 440" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="440" fill="#F7F7F7"/>
+
+  <text x="30" y="50" fill="#111" font-size="30" font-family="Inter" font-weight="600">
+    GITOPS WORKFLOW (ARGOCD)
+  </text>
+
+  <rect x="30" y="120" width="180" height="80" rx="10"
+        fill="#FFFFFF" stroke="#6EA8FF" stroke-width="3"/>
+  <text x="70" y="165" fill="#111" font-size="18" font-family="Inter">Developer</text>
+
+  <line x1="210" y1="160" x2="330" y2="160"
+        stroke="#326CE5" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="330" y="120" width="200" height="80" rx="10"
+        fill="#FFFFFF" stroke="#5FB3B3" stroke-width="3"/>
+  <text x="370" y="165" fill="#111" font-size="18" font-family="Inter">Git Repos</text>
+
+  <line x1="530" y1="160" x2="700" y2="160"
+        stroke="#326CE5" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="700" y="120" width="170" height="80" rx="10"
+        fill="#FFFFFF" stroke="#58A6FF" stroke-width="3"/>
+  <text x="735" y="165" fill="#111" font-size="18" font-family="Inter">ArgoCD</text>
+
+  <rect x="330" y="240" width="540" height="140" rx="12"
+        fill="#FFFFFF" stroke="#326CE5" stroke-width="2"/>
+  <text x="350" y="270" fill="#111" font-size="18" font-family="Inter">
+    Deployment Targets (Multi-cluster)
+  </text>
+
+  <rect x="360" y="300" width="150" height="60" rx="8"
+        fill="#FFFFFF" stroke="#326CE5" stroke-width="2"/>
+  <text x="390" y="335" fill="#111" font-size="16" font-family="Inter">EKS</text>
+
+  <rect x="530" y="300" width="150" height="60" rx="8"
+        fill="#FFFFFF" stroke="#326CE5" stroke-width="2"/>
+  <text x="555" y="335" fill="#111" font-size="16" font-family="Inter">On-Prem K8s</text>
+
+  <rect x="700" y="300" width="150" height="60" rx="8"
+        fill="#FFFFFF" stroke="#326CE5" stroke-width="2"/>
+  <text x="740" y="335" fill="#111" font-size="16" font-family="Inter">K3s</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L10,3 L0,6" fill="#326CE5"/>
+    </marker>
+  </defs>
+</svg>

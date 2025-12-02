@@ -1,0 +1,10 @@
+<svg width="260" height="60" viewBox="0 0 260 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="260" height="60" rx="10" fill="#0D0D0D" stroke="#5DBCD2" stroke-width="3"/>
+  <text x="70" y="28" fill="#FFFFFF" font-family="Inter" font-weight="600" font-size="20">
+    OBSERVABILITY
+  </text>
+  <text x="70" y="48" fill="#FFFFFF" font-family="Inter" font-weight="600" font-size="20">
+    READY
+  </text>
+  <circle cx="35" cy="30" r="12" stroke="#5DBCD2" stroke-width="4" fill="none"/>
+</svg>

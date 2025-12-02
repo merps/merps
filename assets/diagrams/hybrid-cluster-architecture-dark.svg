@@ -1,0 +1,36 @@
+<svg width="1000" height="560" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="560" fill="#0D0D0D"/>
+
+  <text x="30" y="50" fill="#FFFFFF" font-size="32" font-family="Inter" font-weight="600">
+    HYBRID CLUSTER ARCHITECTURE
+  </text>
+
+  <!-- Cloud -->
+  <rect x="40" y="100" width="280" height="380" rx="12"
+        fill="#101010" stroke="#58A6FF" stroke-width="3"/>
+  <text x="60" y="135" fill="#A5D6FF" font-size="20" font-family="Inter">CLOUD (AWS/Azure/GCP)</text>
+
+  <!-- VMware -->
+  <rect x="360" y="100" width="280" height="380" rx="12"
+        fill="#101010" stroke="#F0C674" stroke-width="3"/>
+  <text x="380" y="135" fill="#F8E6B0" font-size="20" font-family="Inter">VMware vSphere</text>
+
+  <!-- Proxmox -->
+  <rect x="680" y="100" width="280" height="380" rx="12"
+        fill="#101010" stroke="#58D68D" stroke-width="3"/>
+  <text x="705" y="135" fill="#B5FFD3" font-size="20" font-family="Inter">Proxmox VE</text>
+
+  <!-- K8s boxes inside -->
+  <rect x="90" y="180" width="180" height="80" rx="10"
+        fill="#0D0D0D" stroke="#58A6FF" stroke-width="2"/>
+  <text x="120" y="225" fill="#A5D6FF" font-size="16" font-family="Inter">EKS Cluster</text>
+
+  <rect x="410" y="180" width="180" height="80" rx="10"
+        fill="#0D0D0D" stroke="#F0C674" stroke-width="2"/>
+  <text x="430" y="225" fill="#F8E6B0" font-size="16" font-family="Inter">K8s on ESXi</text>
+
+  <rect x="730" y="180" width="180" height="80" rx="10"
+        fill="#0D0D0D" stroke="#58D68D" stroke-width="2"/>
+  <text x="760" y="225" fill="#B5FFD3" font-size="16" font-family="Inter">K3s on Proxmox</text>
+
+</svg>

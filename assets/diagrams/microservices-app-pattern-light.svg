@@ -1,0 +1,36 @@
+<svg width="1000" height="520" viewBox="0 0 1000 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="520" fill="#F7F7F7"/>
+
+  <text x="30" y="50" fill="#111" font-size="32" font-family="Inter" font-weight="600">
+    MICROSERVICES APPLICATION PATTERN
+  </text>
+
+  <rect x="40" y="110" width="280" height="100" rx="12"
+        fill="#FFFFFF" stroke="#6EA8FF" stroke-width="3"/>
+  <text x="55" y="155" fill="#111" font-size="20" font-family="Inter">
+    Ingress Controller (L7)
+  </text>
+
+  <rect x="360" y="110" width="600" height="360" rx="12"
+        fill="#FFFFFF" stroke="#5FB3B3" stroke-width="2"/>
+
+  <text x="380" y="145" fill="#222" font-size="18" font-family="Inter">
+    Service Mesh Optional (Linkerd/Istio)
+  </text>
+
+  <rect x="390" y="180" width="200" height="80" rx="10"
+        fill="#FFFFFF" stroke="#5FB3B3" stroke-width="2"/>
+  <text x="445" y="225" fill="#111" font-size="16" font-family="Inter">Service A</text>
+
+  <rect x="620" y="180" width="200" height="80" rx="10"
+        fill="#FFFFFF" stroke="#5FB3B3" stroke-width="2"/>
+  <text x="675" y="225" fill="#111" font-size="16" font-family="Inter">Service B</text>
+
+  <rect x="390" y="290" width="200" height="80" rx="10"
+        fill="#FFFFFF" stroke="#5FB3B3" stroke-width="2"/>
+  <text x="445" y="335" fill="#111" font-size="16" font-family="Inter">Service C</text>
+
+  <rect x="620" y="290" width="200" height="80" rx="10"
+        fill="#FFFFFF" stroke="#5FB3B3" stroke-width="2"/>
+  <text x="675" y="335" fill="#111" font-size="16" font-family="Inter">Service D</text>
+</svg>

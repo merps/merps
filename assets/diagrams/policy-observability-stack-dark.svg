@@ -1,0 +1,43 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="520" fill="#0D0D0D"/>
+
+  <text x="30" y="50" fill="#FFFFFF" font-size="30" font-family="Inter" font-weight="600">
+    OBSERVABILITY + POLICY STACK
+  </text>
+
+  <!-- Policy Row -->
+  <rect x="40" y="90" width="820" height="120" rx="10"
+        fill="#101010" stroke="#7B42BC" stroke-width="3"/>
+  <text x="60" y="125" fill="#E7CFFF" font-size="20" font-family="Inter">
+    Kyverno / OPA / Admission Controls
+  </text>
+
+  <!-- Observability Row -->
+  <rect x="40" y="240" width="820" height="220" rx="10"
+        fill="#101010" stroke="#5DBCD2" stroke-width="3"/>
+  <text x="60" y="275" fill="#C9F8FF" font-size="20" font-family="Inter">
+    Prometheus • Grafana • Tempo • Loki • OpenTelemetry
+  </text>
+
+  <!-- Boxes -->
+  <rect x="70" y="310" width="140" height="60" rx="8"
+        fill="#0D0D0D" stroke="#5DBCD2" stroke-width="2"/>
+  <text x="95" y="345" fill="#A5D6FF" font-size="16" font-family="Inter">Prometheus</text>
+
+  <rect x="230" y="310" width="140" height="60" rx="8"
+        fill="#0D0D0D" stroke="#5DBCD2" stroke-width="2"/>
+  <text x="275" y="345" fill="#A5D6FF" font-size="16" font-family="Inter">Grafana</text>
+
+  <rect x="390" y="310" width="140" height="60" rx="8"
+        fill="#0D0D0D" stroke="#5DBCD2" stroke-width="2"/>
+  <text x="430" y="345" fill="#A5D6FF" font-size="16" font-family="Inter">Loki</text>
+
+  <rect x="550" y="310" width="140" height="60" rx="8"
+        fill="#0D0D0D" stroke="#5DBCD2" stroke-width="2"/>
+  <text x="575" y="345" fill="#A5D6FF" font-size="16" font-family="Inter">Tempo</text>
+
+  <rect x="710" y="310" width="140" height="60" rx="8"
+        fill="#0D0D0D" stroke="#5DBCD2" stroke-width="2"/>
+  <text x="735" y="345" fill="#A5D6FF" font-size="15" font-family="Inter">OpenTelemetry</text>
+
+</svg>

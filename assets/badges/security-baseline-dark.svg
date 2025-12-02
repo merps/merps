@@ -1,0 +1,10 @@
+<svg width="240" height="60" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="60" rx="10" fill="#0D0D0D" stroke="#F0C674" stroke-width="3"/>
+  <text x="70" y="28" fill="#FFFFFF" font-family="Inter" font-weight="600" font-size="20">
+    SECURITY
+  </text>
+  <text x="70" y="48" fill="#FFFFFF" font-family="Inter" font-weight="600" font-size="20">
+    BASELINE
+  </text>
+  <path d="M27 25 L27 35 L43 35 L43 25 Z" stroke="#F0C674" stroke-width="4" fill="none"/>
+</svg>

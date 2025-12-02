@@ -1,0 +1,10 @@
+<svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="60" rx="10" fill="#FFFFFF" stroke="#326CE5" stroke-width="3"/>
+  <text x="70" y="28" fill="#0D0D0D" font-family="Inter" font-weight="600" font-size="20">
+    KUBERNETES 
+  </text>
+  <text x="70" y="48" fill="#0D0D0D" font-family="Inter" font-weight="600" font-size="20">
+    CERTIFIED PATTERN
+  </text>
+  <circle cx="35" cy="30" r="12" stroke="#326CE5" stroke-width="4" fill="none"/>
+</svg>

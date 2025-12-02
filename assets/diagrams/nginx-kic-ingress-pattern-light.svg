@@ -1,0 +1,37 @@
+<svg width="900" height="480" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="480" fill="#F7F7F7"/>
+
+  <text x="30" y="50" fill="#111" font-size="30" font-family="Inter" font-weight="600">
+    INGRESS PATTERN - NGX KIC / OSS
+  </text>
+
+  <!-- Client -->
+  <rect x="30" y="90" width="200" height="120" rx="10"
+        fill="#FFFFFF" stroke="#6EA8FF" stroke-width="3"/>
+  <text x="65" y="150" fill="#326CE5" font-family="Inter" font-size="18">
+    External Client
+  </text>
+
+  <line x1="230" y1="150" x2="300" y2="150"
+        stroke="#326CE5" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Nginx -->
+  <rect x="300" y="110" width="330" height="80" rx="10"
+        fill="#FFFFFF" stroke="#5FB3B3" stroke-width="3"/>
+  <text x="330" y="155" fill="#111" font-size="18" font-family="Inter">Nginx Ingress Controller</text>
+
+  <!-- Services -->
+  <rect x="680" y="90" width="180" height="80" rx="10"
+        fill="#FFFFFF" stroke="#5FB3B3" stroke-width="2"/>
+  <text x="710" y="135" fill="#0B4F4F" font-size="16" font-family="Inter">Service A</text>
+
+  <rect x="680" y="200" width="180" height="80" rx="10"
+        fill="#FFFFFF" stroke="#5FB3B3" stroke-width="2"/>
+  <text x="710" y="245" fill="#0B4F4F" font-size="16" font-family="Inter">Service B</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L10,3 L0,6" fill="#326CE5"/>
+    </marker>
+  </defs>
+</svg>
