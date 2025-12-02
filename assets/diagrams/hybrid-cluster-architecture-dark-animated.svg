@@ -1,0 +1,137 @@
+<svg width="1000" height="560" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Flow line animation -->
+    <style><![CDATA[
+      .flow {
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-dasharray: 14 10;
+        animation: flowAnim 3s linear infinite;
+      }
+      @keyframes flowAnim {
+        to { stroke-dashoffset: -48; }
+      }
+
+      .pulse {
+        animation: pulseAnim 3.4s ease-in-out infinite;
+      }
+      @keyframes pulseAnim {
+        0%   { transform: scale(1);   opacity: 0.8; }
+        50%  { transform: scale(1.05);opacity: 1.0; }
+        100% { transform: scale(1);   opacity: 0.8; }
+      }
+
+      .sweep {
+        animation: sweepMove 5.5s linear infinite;
+        opacity: 0.35;
+      }
+      @keyframes sweepMove {
+        0%   { transform: translateX(-220px); }
+        100% { transform: translateX(220px); }
+      }
+    ]]></style>
+
+    <!-- Arrowhead -->
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L12,3 L0,6" fill="#38BDF8"/>
+    </marker>
+
+  </defs>
+
+  <rect width="1000" height="560" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="30" y="50" fill="#F9FAFB" font-size="32" font-family="Inter" font-weight="600">
+    HYBRID CLUSTER ARCHITECTURE
+  </text>
+
+  <!-- CLOUD BOX -->
+  <g>
+    <rect x="40" y="100" width="280" height="380" rx="14"
+          fill="#020617" stroke="#38BDF8" stroke-width="3"/>
+    <text x="60" y="135" fill="#38BDF8" font-size="20" font-family="Inter">CLOUD</text>
+
+    <g class="sweep">
+      <rect x="40" y="100" width="180" height="380" fill="#38BDF8"/>
+    </g>
+
+    <!-- EKS Cluster -->
+    <g class="pulse">
+      <rect x="90"  y="180" width="180" height="80" rx="10"
+            fill="#020617" stroke="#38BDF8" stroke-width="2"/>
+      <text x="180" y="225" text-anchor="middle"
+            fill="#F9FAFB" font-size="16" font-family="Inter">EKS Cluster</text>
+    </g>
+  </g>
+
+  <!-- VSPHERE BOX -->
+  <g>
+    <rect x="360" y="100" width="280" height="380" rx="14"
+          fill="#020617" stroke="#F0C674" stroke-width="3"/>
+    <text x="380" y="135" fill="#F0C674" font-size="20" font-family="Inter">VMware vSphere</text>
+
+    <g class="sweep">
+      <rect x="360" y="100" width="180" height="380" fill="#F0C674"/>
+    </g>
+
+    <!-- K8s on ESXi -->
+    <g class="pulse">
+      <rect x="410" y="180" width="180" height="80" rx="10"
+            fill="#020617" stroke="#F0C674" stroke-width="2"/>
+      <text x="500" y="225" text-anchor="middle"
+            fill="#F9FAFB" font-size="16" font-family="Inter">K8s on ESXi</text>
+    </g>
+  </g>
+
+  <!-- PROXMOX BOX -->
+  <g>
+    <rect x="680" y="100" width="280" height="380" rx="14"
+          fill="#020617" stroke="#22C55E" stroke-width="3"/>
+    <text x="705" y="135" fill="#22C55E" font-size="20" font-family="Inter">Proxmox VE</text>
+
+    <g class="sweep">
+      <rect x="680" y="100" width="180" height="380" fill="#22C55E"/>
+    </g>
+
+    <!-- K3s -->
+    <g class="pulse">
+      <rect x="730" y="180" width="180" height="80" rx="10"
+            fill="#020617" stroke="#22C55E" stroke-width="2"/>
+      <text x="820" y="225" text-anchor="middle"
+            fill="#F9FAFB" font-size="16" font-family="Inter">K3s on Proxmox</text>
+    </g>
+  </g>
+
+  <!-- FLOWS BETWEEN PLATFORMS -->
+  <!-- Cloud → vSphere -->
+  <line x1="220" y1="220" x2="360" y2="220"
+        class="flow" stroke="#38BDF8" marker-end="url(#arrow)"/>
+
+  <!-- vSphere → Cloud -->
+  <line x1="360" y1="260" x2="220" y2="260"
+        class="flow" stroke="#F0C674" marker-end="url(#arrow)"/>
+
+  <!-- Cloud → Proxmox -->
+  <line x1="220" y1="310" x2="680" y2="220"
+        class="flow" stroke="#38BDF8" marker-end="url(#arrow)"/>
+
+  <!-- Proxmox → Cloud -->
+  <line x1="680" y1="260" x2="220" y2="350"
+        class="flow" stroke="#22C55E" marker-end="url(#arrow)"/>
+
+  <!-- vSphere → Proxmox -->
+  <line x1="640" y1="220" x2="680" y2="220"
+        class="flow" stroke="#F0C674" marker-end="url(#arrow)"/>
+
+  <!-- Proxmox → vSphere -->
+  <line x1="680" y1="260" x2="640" y2="260"
+        class="flow" stroke="#22C55E" marker-end="url(#arrow)"/>
+
+</svg>

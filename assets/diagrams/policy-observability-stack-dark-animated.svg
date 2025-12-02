@@ -1,0 +1,170 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Policy sweep gradient -->
+    <linearGradient id="policySweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#C4B5FD" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <style><![CDATA[
+      .policy-eval {
+        stroke: #C4B5FD;
+        stroke-width: 3;
+        fill: #020617;
+      }
+
+      .policy-sweep {
+        animation: policyScan 3.5s linear infinite;
+      }
+      @keyframes policyScan {
+        0%   { transform: translateX(-220px); }
+        100% { transform: translateX(220px); }
+      }
+
+      .obs-box {
+        fill: #020617;
+        stroke: #22D3EE;
+        stroke-width: 2;
+        rx: 10;
+      }
+
+      .pulse-prom {
+        animation: compPulse 3s ease-in-out infinite;
+      }
+      .pulse-graf {
+        animation: compPulse 3s ease-in-out infinite;
+        animation-delay: 0.3s;
+      }
+      .pulse-loki {
+        animation: compPulse 3s ease-in-out infinite;
+        animation-delay: 0.6s;
+      }
+      .pulse-tempo {
+        animation: compPulse 3s ease-in-out infinite;
+        animation-delay: 0.9s;
+      }
+      .pulse-otel {
+        animation: compPulse 3s ease-in-out infinite;
+        animation-delay: 1.2s;
+      }
+
+      @keyframes compPulse {
+        0%   { transform: translateY(0);   opacity: 0.75; }
+        50%  { transform: translateY(-4px);opacity: 1.0;  }
+        100% { transform: translateY(0);   opacity: 0.75; }
+      }
+
+      .signal-line {
+        stroke: #22D3EE;
+        stroke-width: 4;
+        stroke-dasharray: 14 10;
+        animation: signalFlow 3s linear infinite;
+      }
+      @keyframes signalFlow {
+        to { stroke-dashoffset: -48; }
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="url(#bgGrad2)"/>
+
+  <!-- Title -->
+  <text x="30" y="50" fill="#F9FAFB" font-size="30" font-family="Inter, system-ui" font-weight="600">
+    OBSERVABILITY + POLICY STACK
+  </text>
+
+  <!-- Policy Layer -->
+  <g>
+    <rect x="40" y="90" width="820" height="120" class="policy-eval"/>
+    <text x="60" y="135" fill="#E5E7EB" font-size="20" font-family="Inter, system-ui">
+      Kyverno • OPA Gatekeeper • Admission Webhooks
+    </text>
+    <text x="60" y="160" fill="#A855F7" font-size="13" font-family="Inter, system-ui">
+      Pre-commit ➜ CI policy checks ➜ Admission controls ➜ Runtime audit
+    </text>
+
+    <!-- Sweeping highlight -->
+    <g class="policy-sweep">
+      <rect x="40" y="90" width="220" height="120" fill="url(#policySweep)"/>
+    </g>
+  </g>
+
+  <!-- Observability Layer -->
+  <rect x="40" y="240" width="820" height="220" rx="16"
+        fill="#020617" stroke="#22D3EE" stroke-width="2"/>
+  <text x="60" y="275" fill="#E5E7EB" font-size="20" font-family="Inter, system-ui">
+    Prometheus • Grafana • Tempo • Loki • OpenTelemetry
+  </text>
+  <text x="60" y="298" fill="#9CA3AF" font-size="13" font-family="Inter, system-ui">
+    Metrics, logs, traces, events unified via OTEL pipelines
+  </text>
+
+  <!-- Components row -->
+  <!-- Prometheus -->
+  <g class="pulse-prom">
+    <rect x="70" y="310" width="140" height="60" class="obs-box"/>
+    <text x="140" y="338" fill="#F9FAFB" font-size="16" font-family="Inter, system-ui" text-anchor="middle">
+      Prometheus
+    </text>
+    <text x="140" y="355" fill="#9CA3AF" font-size="11" font-family="Inter, system-ui" text-anchor="middle">
+      scrape / alert
+    </text>
+  </g>
+
+  <!-- Grafana -->
+  <g class="pulse-graf">
+    <rect x="230" y="310" width="140" height="60" class="obs-box"/>
+    <text x="300" y="338" fill="#F9FAFB" font-size="16" font-family="Inter, system-ui" text-anchor="middle">
+      Grafana
+    </text>
+    <text x="300" y="355" fill="#9CA3AF" font-size="11" font-family="Inter, system-ui" text-anchor="middle">
+      dashboards
+    </text>
+  </g>
+
+  <!-- Loki -->
+  <g class="pulse-loki">
+    <rect x="390" y="310" width="140" height="60" class="obs-box"/>
+    <text x="460" y="338" fill="#F9FAFB" font-size="16" font-family="Inter, system-ui" text-anchor="middle">
+      Loki
+    </text>
+    <text x="460" y="355" fill="#9CA3AF" font-size="11" font-family="Inter, system-ui" text-anchor="middle">
+      logs
+    </text>
+  </g>
+
+  <!-- Tempo -->
+  <g class="pulse-tempo">
+    <rect x="550" y="310" width="140" height="60" class="obs-box"/>
+    <text x="620" y="338" fill="#F9FAFB" font-size="16" font-family="Inter, system-ui" text-anchor="middle">
+      Tempo
+    </text>
+    <text x="620" y="355" fill="#9CA3AF" font-size="11" font-family="Inter, system-ui" text-anchor="middle">
+      traces
+    </text>
+  </g>
+
+  <!-- OTEL -->
+  <g class="pulse-otel">
+    <rect x="710" y="310" width="140" height="60" class="obs-box"/>
+    <text x="780" y="336" fill="#F9FAFB" font-size="15" font-family="Inter, system-ui" text-anchor="middle">
+      OpenTelemetry
+    </text>
+    <text x="780" y="355" fill="#9CA3AF" font-size="11" font-family="Inter, system-ui" text-anchor="middle">
+      pipelines
+    </text>
+  </g>
+
+  <!-- Signal Flow -->
+  <line x1="70" y1="420" x2="830" y2="420" class="signal-line"/>
+  <text x="450" y="410" fill="#9CA3AF" font-size="11" font-family="Inter, system-ui" text-anchor="middle">
+    metrics • logs • traces streaming from clusters / services
+  </text>
+</svg>

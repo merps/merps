@@ -1,0 +1,277 @@
+<svg width="1000" height="600" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Arrow -->
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L12,3 L0,6" fill="#38BDF8"/>
+    </marker>
+
+    <style><![CDATA[
+      text {
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      /* Pulsing heartbeat for control plane */
+      .cp-core {
+        animation: cpPulse 3.2s ease-in-out infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+      @keyframes cpPulse {
+        0%   { transform: scale(1);   opacity: 1;   }
+        50%  { transform: scale(1.05);opacity: 1;   }
+        100% { transform: scale(1);   opacity: 1;   }
+      }
+
+      .cp-ring {
+        animation: cpRing 3.2s ease-out infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+      @keyframes cpRing {
+        0%   { r: 38; opacity: 0.35; }
+        50%  { r: 50; opacity: 0.0;  }
+        100% { r: 38; opacity: 0.0;  }
+      }
+
+      /* Nodegroup autoscaler-ish pulse */
+      .node-pulse {
+        animation: nodePulse 4.2s ease-in-out infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+      @keyframes nodePulse {
+        0%   { transform: scale(1);   opacity: 0.9; }
+        40%  { transform: scale(1.03);opacity: 1.0; }
+        100% { transform: scale(1);   opacity: 0.9; }
+      }
+
+      /* Flowing traffic lines */
+      .flow-line {
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-dasharray: 16 12;
+      }
+      .flow-client {
+        stroke: #38BDF8;
+        animation: flowClient 3s linear infinite;
+      }
+      .flow-ingress-a {
+        stroke: #22D3EE;
+        animation: flowIngressA 2.6s linear infinite;
+      }
+      .flow-ingress-b {
+        stroke: #A855F7;
+        animation: flowIngressB 3.1s linear infinite;
+      }
+      .flow-obs {
+        stroke: #FCD34D;
+        animation: flowObs 3.4s linear infinite;
+      }
+      @keyframes flowClient   { to { stroke-dashoffset: -56; } }
+      @keyframes flowIngressA { to { stroke-dashoffset: -56; } }
+      @keyframes flowIngressB { to { stroke-dashoffset: -56; } }
+      @keyframes flowObs      { to { stroke-dashoffset: -56; } }
+
+      /* Gentle sweep highlight across cluster */
+      .cluster-sweep {
+        animation: sweep 8s linear infinite;
+        opacity: 0.14;
+      }
+      @keyframes sweep {
+        0%   { transform: translateX(-260px); }
+        100% { transform: translateX(260px);  }
+      }
+
+      /* Section labels */
+      .section-label {
+        fill: #9CA3AF;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .badge {
+        font-size: 11px;
+        fill: #E5E7EB;
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="600" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="32" y="52" fill="#F9FAFB" font-size="30" font-weight="600">
+    EKS PLATFORM BLUEPRINT (ANIMATED)
+  </text>
+  <text x="34" y="78" fill="#6B7280" font-size="14">
+    Ingress · Nodegroups · Control Plane · Observability
+  </text>
+
+  <!-- CLIENT (Left) -->
+  <g>
+    <rect x="40" y="140" width="170" height="110" rx="12"
+          fill="#020617" stroke="#38BDF8" stroke-width="2.5"/>
+    <text x="65" y="182" fill="#F9FAFB" font-size="16">External Clients</text>
+    <text x="65" y="206" fill="#9CA3AF" font-size="12">Browsers · API Consumers</text>
+  </g>
+
+  <!-- CLIENT -> INGRESS flow -->
+  <line x1="210" y1="195" x2="320" y2="195"
+        class="flow-line flow-client" marker-end="url(#arrow)"/>
+
+  <!-- CLUSTER ENVELOPE -->
+  <g>
+    <rect x="320" y="120" width="620" height="380" rx="18"
+          fill="none" stroke="#1F2933" stroke-width="2"/>
+    <text x="335" y="142" class="section-label">aws eks cluster</text>
+
+    <!-- Sweep highlight -->
+    <g class="cluster-sweep">
+      <rect x="340" y="150" width="180" height="330" fill="#38BDF8"/>
+    </g>
+  </g>
+
+  <!-- CONTROL PLANE (top center) -->
+  <g>
+    <rect x="430" y="160" width="200" height="120" rx="14"
+          fill="#020617" stroke="#6EE7B7" stroke-width="2.5"/>
+    <text x="447" y="188" fill="#F9FAFB" font-size="15" font-weight="500">
+      EKS Control Plane
+    </text>
+    <text x="447" y="208" fill="#9CA3AF" font-size="12">
+      API Server · etcd · Scheduler
+    </text>
+
+    <!-- Heartbeat core -->
+    <circle cx="530" cy="235" r="22" fill="#022C22"
+            stroke="#6EE7B7" stroke-width="2" class="cp-core"/>
+    <circle cx="530" cy="235" r="38" fill="none"
+            stroke="#6EE7B7" stroke-width="2" class="cp-ring"/>
+    <text x="522" y="239" fill="#A7F3D0" font-size="12" font-weight="600">API</text>
+  </g>
+
+  <!-- ADD-ONS ROW (top right inside cluster) -->
+  <g>
+    <rect x="655" y="160" width="255" height="120" rx="14"
+          fill="#020617" stroke="#4B5563" stroke-width="1.8"/>
+    <text x="670" y="186" fill="#E5E7EB" font-size="14" font-weight="500">
+      Cluster Add-ons
+    </text>
+
+    <text x="670" y="210" class="badge">CNI (Cilium / VPC)</text>
+    <text x="670" y="228" class="badge">CSI · Metrics Server · Cluster Autoscaler</text>
+    <text x="670" y="246" class="badge">Nginx Ingress Controller</text>
+  </g>
+
+  <!-- INGRESS / DATA PLANE (middle) -->
+  <g>
+    <!-- Ingress Block -->
+    <rect x="350" y="320" width="230" height="130" rx="14"
+          fill="#020617" stroke="#5FB3B3" stroke-width="2.5"/>
+    <text x="366" y="348" fill="#F9FAFB" font-size="15" font-weight="500">
+      Ingress & L7 Routing
+    </text>
+    <text x="366" y="368" fill="#9CA3AF" font-size="12">
+      Nginx Ingress Controller
+    </text>
+
+    <!-- Client -> Ingress (already from left) attaches center of this box -->
+    <!-- Ingress -> Services flows -->
+    <line x1="580" y1="355" x2="660" y2="335"
+          class="flow-line flow-ingress-a" marker-end="url(#arrow)"/>
+    <line x1="580" y1="375" x2="660" y2="380"
+          class="flow-line flow-ingress-b" marker-end="url(#arrow)"/>
+
+    <!-- Small label inside ingress -->
+    <text x="366" y="392" fill="#E5E7EB" font-size="11">
+      TLS termination · path/host routing
+    </text>
+  </g>
+
+  <!-- NODEGROUPS + SERVICES (right middle) -->
+  <!-- System Nodegroup -->
+  <g class="node-pulse">
+    <rect x="660" y="310" width="140" height="60" rx="10"
+          fill="#020617" stroke="#22D3EE" stroke-width="2"/>
+    <text x="672" y="336" fill="#E5E7EB" font-size="13">System Nodegroup</text>
+    <text x="672" y="354" fill="#9CA3AF" font-size="11">Core add-ons · Daemons</text>
+  </g>
+
+  <!-- App Nodegroup -->
+  <g class="node-pulse" style="animation-delay: .5s;">
+    <rect x="660" y="380" width="140" height="60" rx="10"
+          fill="#020617" stroke="#A855F7" stroke-width="2"/>
+    <text x="672" y="406" fill="#E5E7EB" font-size="13">App Nodegroup</text>
+    <text x="672" y="424" fill="#9CA3AF" font-size="11">Workloads · Services</text>
+  </g>
+
+  <!-- Backend Services -->
+  <g class="node-pulse" style="animation-delay: 1s;">
+    <rect x="820" y="320" width="110" height="40" rx="9"
+          fill="#020617" stroke="#22D3EE" stroke-width="1.8"/>
+    <text x="834" y="344" fill="#E0F2FE" font-size="12">Service A</text>
+  </g>
+
+  <g class="node-pulse" style="animation-delay: 1.4s;">
+    <rect x="820" y="370" width="110" height="40" rx="9"
+          fill="#020617" stroke="#A855F7" stroke-width="1.8"/>
+    <text x="834" y="394" fill="#F5D0FE" font-size="12">Service B</text>
+  </g>
+
+  <!-- OBSERVABILITY (bottom right) -->
+  <g>
+    <rect x="700" y="450" width="230" height="90" rx="14"
+          fill="#020617" stroke="#FCD34D" stroke-width="2"/>
+    <text x="716" y="476" fill="#F9FAFB" font-size="14" font-weight="500">
+      Observability Stack
+    </text>
+    <text x="716" y="496" fill="#E5E7EB" font-size="11">
+      Metrics · Logs · Traces · Dashboards
+    </text>
+  </g>
+
+  <!-- Observability flows from Nodegroups to Obs -->
+  <line x1="730" y1="370" x2="760" y2="450"
+        class="flow-line flow-obs" marker-end="url(#arrow)"/>
+  <line x1="730" y1="410" x2="760" y2="450"
+        class="flow-line flow-obs" marker-end="url(#arrow)"/>
+
+  <!-- CI/CD (bottom left, external) -->
+  <g>
+    <rect x="40" y="410" width="220" height="100" rx="12"
+          fill="#020617" stroke="#4B5563" stroke-width="2"/>
+    <text x="60" y="438" fill="#F9FAFB" font-size="14" font-weight="500">
+      CI / CD & Platform Ops
+    </text>
+    <text x="60" y="458" fill="#9CA3AF" font-size="11">
+      GitHub Actions · GitLab CI · Argo CD
+    </text>
+    <text x="60" y="478" fill="#9CA3AF" font-size="11">
+      IaC: Terraform · Helm · Kustomize
+    </text>
+  </g>
+
+  <!-- CI/CD -> Cluster API (dashed) -->
+  <line x1="260" y1="460" x2="430" y2="260"
+        stroke="#6B7280" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+
+  <!-- Legend (top right corner) -->
+  <g>
+    <text x="760" y="80" fill="#9CA3AF" font-size="12">Legend</text>
+    <line x1="760" y1="92" x2="780" y2="92"
+          class="flow-line flow-client"/>
+    <text x="788" y="96" fill="#9CA3AF" font-size="11">Ingress Traffic</text>
+
+    <line x1="760" y1="110" x2="780" y2="110"
+          class="flow-line flow-obs"/>
+    <text x="788" y="114" fill="#9CA3AF" font-size="11">Telemetry Stream</text>
+  </g>
+
+</svg>

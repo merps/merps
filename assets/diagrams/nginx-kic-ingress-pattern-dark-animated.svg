@@ -1,0 +1,121 @@
+<svg width="900" height="480" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Arrowhead -->
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L12,3 L0,6" fill="#38BDF8"/>
+    </marker>
+
+    <style><![CDATA[
+      /* flowing request from client */
+      .reqflow {
+        stroke: #38BDF8;
+        stroke-width: 4;
+        stroke-dasharray: 14 10;
+        stroke-linecap: round;
+        animation: reqAnim 2.8s linear infinite;
+      }
+      @keyframes reqAnim {
+        to { stroke-dashoffset: -48; }
+      }
+
+      /* ingress to service routing */
+      .svcflowA {
+        stroke: #22D3EE;
+        stroke-width: 4;
+        stroke-dasharray: 14 10;
+        animation: svcA 2.6s linear infinite;
+      }
+      @keyframes svcA {
+        to { stroke-dashoffset: -48; }
+      }
+
+      .svcflowB {
+        stroke: #A855F7;
+        stroke-width: 4;
+        stroke-dasharray: 14 10;
+        animation: svcB 3.1s linear infinite;
+      }
+      @keyframes svcB {
+        to { stroke-dashoffset: -48; }
+      }
+
+      .pulse {
+        animation: pulseAnim 3.5s ease-in-out infinite;
+      }
+      @keyframes pulseAnim {
+        0%   { transform: scale(1);   opacity: 0.8; }
+        50%  { transform: scale(1.05);opacity: 1.0; }
+        100% { transform: scale(1);   opacity: 0.8; }
+      }
+
+      .sweep {
+        animation: sweepSlide 7s linear infinite;
+        opacity: 0.18;
+      }
+      @keyframes sweepSlide {
+        0%   { transform: translateX(-200px); }
+        100% { transform: translateX(200px); }
+      }
+    ]]></style>
+
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="480" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="30" y="50" fill="#F9FAFB" font-size="30" font-family="Inter" font-weight="600">
+    INGRESS PATTERN (NGINX KIC - ANIMATED)
+  </text>
+
+  <!-- CLIENT -->
+  <rect x="30" y="90" width="200" height="120" rx="10"
+        fill="#020617" stroke="#38BDF8" stroke-width="3"/>
+  <text x="65" y="150" fill="#F9FAFB" font-size="18" font-family="Inter">External Client</text>
+
+  <!-- Client → Ingress -->
+  <line x1="230" y1="150" x2="300" y2="150"
+        class="reqflow" marker-end="url(#arrow)"/>
+
+  <!-- INGRESS CONTROLLER -->
+  <g class="pulse">
+    <rect x="300" y="110" width="330" height="80" rx="10"
+          fill="#020617" stroke="#5FB3B3" stroke-width="3"/>
+    <g class="sweep">
+      <rect x="300" y="110" width="200" height="80" fill="#5FB3B3"/>
+    </g>
+
+    <text x="330" y="155" fill="#F9FAFB" font-size="18" font-family="Inter">
+      Nginx Ingress Controller
+    </text>
+  </g>
+
+  <!-- Service A -->
+  <g class="pulse">
+    <rect x="680" y="90" width="180" height="80" rx="10"
+          fill="#020617" stroke="#22D3EE" stroke-width="2"/>
+    <text x="710" y="135" fill="#BEF8FF" font-size="16" font-family="Inter">Service A</text>
+  </g>
+
+  <!-- Service B -->
+  <g class="pulse" style="animation-delay: .4s;">
+    <rect x="680" y="200" width="180" height="80" rx="10"
+          fill="#020617" stroke="#A855F7" stroke-width="2"/>
+    <text x="710" y="245" fill="#E9D5FF" font-size="16" font-family="Inter">Service B</text>
+  </g>
+
+  <!-- Ingress → A -->
+  <line x1="630" y1="150" x2="680" y2="130"
+        class="svcflowA" marker-end="url(#arrow)"/>
+
+  <!-- Ingress → B -->
+  <line x1="630" y1="150" x2="680" y2="240"
+        class="svcflowB" marker-end="url(#arrow)"/>
+
+</svg>
