@@ -1,0 +1,21 @@
+<svg width="1920" height="420" viewBox="0 0 1920 420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="420" fill="#0D0D0D"/>
+
+  <path d="M0 310 L1920 120 L1920 420 L0 420 Z" fill="#111418"/>
+
+  <text x="140" y="165" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="60" font-weight="600">
+    k8s-platform-labs
+  </text>
+
+  <text x="140" y="230" fill="#C5C9D0" font-family="Inter, sans-serif" font-size="32">
+    Hands-on Kubernetes Labs · Ingress · Observability · Security · Hybrid
+  </text>
+
+  <text x="140" y="285" fill="#7E8895" font-family="Inter, sans-serif" font-size="26">
+    EKS · K3s · vSphere · Proxmox · Microservices Patterns
+  </text>
+
+  <!-- K8s Icon -->
+  <circle cx="1690" cy="200" r="85" stroke="#326CE5" stroke-width="5" fill="none"/>
+  <text x="1648" y="215" fill="#326CE5" font-size="40" font-family="Inter" font-weight="600">K8s</text>
+</svg>

@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/profile-banner-light.svg">
-  <img alt="Michael Kennedy – Platform Engineer" src="assets/profile-banner-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/profile-banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile/profile-banner-light.svg">
+  <img alt="Michael Kennedy – Platform Engineer" src="assets/profile/profile-banner-light.svg">
 </picture>
 
 <h1 align="center">Michael Kennedy — Platform Engineer</h1>

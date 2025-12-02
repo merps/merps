@@ -1,0 +1,19 @@
+<svg width="1920" height="420" viewBox="0 0 1920 420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="420" fill="#0D0D0D"/>
+  <path d="M0 310 L1920 140 L1920 420 L0 420 Z" fill="#111418"/>
+
+  <text x="140" y="165" fill="#FFFFFF" font-family="Inter" font-size="58" font-weight="600">
+    observability-engineering-stack
+  </text>
+
+  <text x="140" y="230" fill="#C5C9D0" font-family="Inter" font-size="32">
+    OTEL Pipelines · Metrics · Logs · Traces · Dashboards · SLOs
+  </text>
+
+  <text x="140" y="285" fill="#7E8895" font-family="Inter" font-size="26">
+    Grafana · Prometheus · Loki · Tempo · Cross-stack Telemetry
+  </text>
+
+  <circle cx="1650" cy="200" r="85" stroke="#5DBCD2" stroke-width="5" fill="none"/>
+  <text x="1602" y="215" fill="#5DBCD2" font-size="40" font-family="Inter" font-weight="600">OTEL</text>
+</svg>
