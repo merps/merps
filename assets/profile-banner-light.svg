@@ -1,0 +1,40 @@
+<svg width="1920" height="480" viewBox="0 0 1920 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F7F7F7"/>
+    </linearGradient>
+
+    <!-- Subtle grid pattern -->
+    <pattern id="grid-light" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none" stroke="#E5E5E5" stroke-width="1"/>
+    </pattern>
+
+    <!-- Accent underline -->
+    <linearGradient id="accent-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#326CE5"/>
+      <stop offset="100%" stop-color="#7B42BC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background layers -->
+  <rect width="1920" height="480" fill="url(#bg-light)" />
+  <rect width="1920" height="480" fill="url(#grid-light)" opacity="0.35"/>
+
+  <!-- Title -->
+  <text x="50%" y="45%" text-anchor="middle" fill="#1A1A1A"
+        font-family="Inter, Arial, sans-serif" font-size="72" font-weight="600">
+    Michael Kennedy
+  </text>
+
+  <!-- Subtitle -->
+  <text x="50%" y="60%" text-anchor="middle" fill="#555555"
+        font-family="Inter, Arial, sans-serif" font-size="34" font-weight="300">
+    Platform Engineer • Kubernetes • Terraform • Cloud Architecture • Observability
+  </text>
+
+  <!-- Accent line -->
+  <rect x="35%" y="65%" width="30%" height="6" fill="url(#accent-light)" rx="4"/>
+
+</svg>
