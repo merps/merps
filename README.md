@@ -1,169 +1,94 @@
-🌐 **Michael Kennedy — Platform Engineer | Cloud, Hybrid, & Infrastructure Architect**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-banner-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile-banner-light.png">
+  <img alt="Michael Kennedy – Platform Engineer" src="assets/profile-banner-light.png">
+</picture>
 
-**I design, build, and automate full-stack platform infrastructure across cloud, hybrid, and on-prem environments.**
-My work spans AWS, Kubernetes, VMware, Proxmox, networking, security, observability, and application delivery.
+<h1 align="center">Michael Kennedy — Platform Engineer</h1>
 
-I build systems that **developers love, security trusts,** and **ops can run** — with IaC, CI/CD, strong governance, and clear platform boundaries.
-_______________________________________________________________________________________________________________________________________
+<p align="center">
+    <strong>Kubernetes • Cloud Platforms • Terraform • Platform Observability • SRE</strong><br>
+    Building secure, observable, automated platforms across AWS, vSphere, and Proxmox.
+</p>
 
-🚀 **What I Build (Flagship Repos)**
-These three repositories define my engineering persona. They represent how I think, design, and ship platform infrastructure.
-_______________________________________________________________________________________________________________________________________
+---
 
-**1. platform-eks-nginx-kic**
+## 🧩 Core Competencies
+- **Kubernetes**: EKS, K3s, vSphere Tanzu, Proxmox + k3s clusters  
+- **Infrastructure-as-Code**: Terraform, Helm, GitOps  
+- **Platform Engineering**: NGINX KIC, service mesh patterns, secure ingress  
+- **Observability**: OTEL, Metrics/Logs/Traces, end-to-end platform insights  
+- **Cloud & Virtualisation**: AWS, vSphere, Proxmox  
+- **Security**: Baseline hardening, policy-as-code, microservices posture  
+- **Automation**: CI/CD, GitLab pipelines, semantic-release, IaC governance  
 
-**Production-ready EKS + NGINX Ingress + IRSA architecture.**
+---
 
-✔ Terraform (modular)
+## 🚀 Featured Platform Repositories
 
-✔ NGINX Ingress Controller
+### ### **1. platform-eks-nginx-kic**
+Minimal, production-ready EKS platform with NGINX KIC, IAM, networking, and automated deployment.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/platform-eks-nginx-kic-dark.png">
+  <img src="assets/platform-eks-nginx-kic-light.png" width="100%">
+</picture>
 
-✔ Secure workload boundaries
+### **2. vsphere-nginx-secure-appstack**
+vSphere-hosted Kubernetes app stack with secure ingress, TLS, and policy baselines.
 
-✔ Demo workloads + L7 routing
+### **3. eks-policy-observability-stack**
+Full OTEL-enabled observability pipeline with EKS, metrics/logs/traces, and rich dashboards.
 
-✔ CI for IaC & manifest validation
+### **4. platform-aws-microservices**
+AWS-native microservices reference deployment (IaC-first).
 
-**→ A complete “cloud-native edge” stack.**
+### **5. platform-vmware-k3s-iac**
+Automated VMware-hosted K3s cluster with full IaC deployment.
 
-🔗 Repo: [platform-eks-nginx-kic](https://github.com/merps/platform-eks-nginx-kic)
-_______________________________________________________________________________________________________________________________________
+### **6. platform-proxmox-k3s-iac**
+Proxmox-native K3s cluster automation (Terraform + cloud-init).
 
-**2. vsphere-nginx-secure-appstack**
+---
 
-**Hybrid infrastructure: vSphere + cloud-init + NGINX secure application gateway.**
+## 📚 Professional Identity
+- Platform Engineer specialising in **secure, observable, cloud-native platforms**  
+- Strong background in Kubernetes, distributed systems, and IaC automation  
+- Obsessed with **clean architecture**, **repeatable environments**, **zero-to-prod automation**  
+- Active builder of **open-source platform patterns**
 
-✔ VMware VM automation
+---
 
-✔ Secure NGINX reverse proxy layer
+## 🔧 Tooling & Tech Stack
 
-✔ TLS termination
+**Languages:**  
+`Go` · `Python` · `Bash` · `YAML`  
 
-✔ Application nodes via cloud-init
+**Cloud & Runtime:**  
+`AWS` · `Kubernetes` · `Proxmox` · `vSphere`  
 
-✔ Enterprise-style architecture & flows
+**IaC & Automation:**  
+`Terraform` · `Helm` · `Ansible` · `GitHub Actions` · `GitLab CI`  
 
-**→ Shows how I build secure, governed on-prem platforms.**
+**Ingress / Proxy / Networking:**  
+`NGINX KIC` · `IngressLink patterns` · `LB controllers`
 
-🔗 Repo: [vsphere-nginx-secure-appstack](https://github.com/merps/vsphere-nginx-secure-appstack)
-_______________________________________________________________________________________________________________________________________
+**Observability:**  
+`OpenTelemetry` · `Grafana` · `Prometheus` · `Loki` · `Tempo`
 
-**3. eks-policy-observability-stack**
+---
 
-**Governance + observability for real Kubernetes platforms.**
+## 🎓 Certifications
+(To be updated with your Credly export)
+- AWS  
+- Kubernetes  
+- Security  
 
-✔ Admission control
+Dark-mode badge pack included in asset bundle.
 
-✔ Network policies
+---
 
-✔ Datadog / OpenTelemetry
+## 📫 Contact
+- GitHub: **@merps**  
+- LinkedIn: (add link)  
 
-✔ Alerts & telemetry pipelines
-
-✔ Terraform + K8s policies
-
-**→ Because real platforms need control, not just clusters.**
-
-🔗 Repo: [eks-policy-observability-stack](https://github.com/merps/eks-policy-observability-stack)
-_______________________________________________________________________________________________________________________________________
-
-🧠 My Engineering Persona 
-
-I operate with a clear personal engineering system:
-
-**_Platform Thinking_**
-
-I build infrastructure as products, not projects.
-My focus is on developer usability, observability, paved roads, and golden paths.
-
-**_Governed Freedom_**
-
-Teams move fast when platforms give them autonomy within safe, secure guardrails.
-I design those guardrails.
-
-**_Automation at the Edges_**
-
-Infra without automation is liability.
-Everything I build is driven by IaC, cloud-init, pipelines, and declarative configs.
-
-**_Clarity Over Cleverness_**
-
-My identity OS prioritizes clarity, repeatability, and narrative over hacks and heroics.
-
-**_Consistency > Complexity_**
-
-Platforms survive by being consistent.
-I create simple, stable patterns — even when solving complex multi-domain problems.
-_______________________________________________________________________________________________________________________________________
-
-🏆 Certifications (Credly)
-
-These aren’t badges; they’re signals of lifelong learning and broad capability across cloud, networks, infra, and security.
-
-**Notable certifications include:**
-
-- **AWS** – Cloud, Architecture, Security
-- **Azure** – Administrator, Infrastructure, Identity
-- **Kubernetes** – CKA/CKAD style workloads and platform fundamentals
-- **Security & Networking** – F5, FireMon, Palo Alto, NGINX, Zero Trust
-- **DevOps & Automation** – Terraform, CI/CD systems, automation frameworks
-
-Certs reinforce what my repos prove:
-**I think across layers — from metal → hypervisor → cloud → cluster → app → edge.**
-_______________________________________________________________________________________________________________________________________
-
-🏗️ What I’m Currently Building
-
-- Modernizing and polishing the extracted platform repos for public presentation
-- Building an end-to-end identity map that aligns:
-  - my personal engineering philosophy
-  - my certified skill sets
-  - my platform engineering work
-  - my long-term direction (cloud + hybrid + security + developer experience)
-- Designing a Platform Engineer Portfolio that demonstrates:
-  - design decisions
-  - architecture diagrams
-  - IaC patterns
-  - governance fundamentals
-  - real-world infrastructure thinking
-_______________________________________________________________________________________________________________________________________
-
-🔧 Technical Focus Areas
-
-**Infrastructure:**
-
-AWS, Azure, VMware, Proxmox, Bare Metal, Virtualization
-
-**Kubernetes Platforms:**
-
-EKS, Kubeadm, ingress/KIC, CNI models, cluster bootstrap, governance
-
-**App Delivery & Networking:**
-
-NGINX, F5 (BIG-IP, XC), Load Balancing, L4/L7 policy, service mesh integration
-
-**Security:**
-
-Zero Trust patterns, mTLS, hardened baselines, network policy, RBAC
-
-**Observability:**
-
-OpenTelemetry, Datadog, metrics/logs/traces, collectors, pipelines
-
-**Automation:**
-
-Terraform, Packer, GitHub Actions, GitLab CI, cloud-init, Helm
-_______________________________________________________________________________________________________________________________________
-
-⚙️ How I Work
-
-- IaC first: everything is declarative
-- Pipelines everywhere: every environment tested, validated, formatted
-- Strong opinions, loosely held: I choose patterns deliberately
-- Architecture visible: diagrams > assumptions
-- Extremely practical: I build things I would want to support
-_______________________________________________________________________________________________________________________________________
-
-🤝 Let’s Connect
-
-If you want to talk platform engineering, hybrid cloud, Kubernetes, or infrastructure automation, feel free to reach out.
+---
