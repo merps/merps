@@ -89,6 +89,6 @@ Dark-mode badge pack included in asset bundle.
 
 ## 📫 Contact
 - GitHub: **@merps**  
-- LinkedIn: (add link)  
+- LinkedIn: [merps](https://www.linkedin.com/in/merps/)  
 
 ---
